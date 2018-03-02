@@ -1,0 +1,17 @@
+
+
+
+
+.user{
+  &-edit{
+    color: $user-brown;
+  }
+  &-add{
+    color: $user-green;
+  }
+  &-del{
+    color: $user-red;
+  }
+
+
+}

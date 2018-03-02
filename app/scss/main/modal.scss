@@ -1,0 +1,126 @@
+.modal {
+  &-dialog {
+    width: 500px;
+  }
+  &-header{
+    border: none;
+    //padding-left: 60px;
+    padding-right: 80px;
+  }
+  &-footer {
+    border: none;
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 80px;
+    padding-top: 45px;
+  }
+  &-title {
+    padding-left: 43px;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+  &-body {
+    padding: 0;
+    border: none;
+    > div {
+      padding: 0 60px;
+    }
+  }
+  #close {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    font-family: $font-OpenSans-Semibold;
+    font-size: 14px;
+    color: $blue;
+    margin-top: 6px;
+    &:before {
+      content: "";
+      display: inline-block;
+      vertical-align: top;
+      background: url('../../img/close-arr.png') no-repeat center center;
+      //padding: 8px;
+      width: 20px;
+      height: 18px;
+      margin-right: 13px;
+      margin-left: 11px;
+
+    }
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  #login{
+    background: #29176f;
+    color: $white;
+    font-family: $font-OpenSans-Semibold;
+    padding: 26px 25px;
+    line-height: 2px;
+    margin-bottom: 22px;
+  }
+  .agreement{
+    color: #9ba1af;
+    font-size: 12px;
+
+  }
+
+  &-content {
+    box-shadow: none;
+    border: none;
+    //.close{
+    //  display: none;
+    //}
+    button{
+      &:focus,
+      &:active{
+        outline: none;
+        background: transparent;
+      }
+    }
+    .account {
+      margin-top: 24px;
+      margin-bottom: 20px;
+      &-button {
+        cursor: pointer;
+        border-radius: 3px;
+        background-color: rgb(188, 193, 213);
+        box-shadow: 0px 3.464px 9px 0px rgba(0, 0, 0, 0.32);
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-family: $font-OpenSans-Semibold;
+        &:last-child{
+          background: #fff;
+        }
+
+      }
+    }
+    .flex {
+      justify-content: flex-start;
+      span {
+        margin-right: 20px;
+      }
+    }
+    .label-block {
+      border-bottom: 1px solid $grey;
+      width: 100%;
+      span {
+        color: $text-color;
+        display: inline-block;
+        height: 80px;
+        vertical-align: middle;
+        line-height: 80px;
+        font-size: 18px;
+      }
+      .bold {
+        font-family: $font-OpenSans-Semibold;
+        font-size: 14px;
+        width: 100px;
+      }
+
+    }
+  }
+}

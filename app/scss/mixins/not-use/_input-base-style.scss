@@ -1,0 +1,27 @@
+@mixin input-base-style{
+  @include transition;
+  @include border;
+  padding: 8px;
+  box-sizing: border-box;
+  background: $white;
+  //border: 1px solid $grey-true;
+  //border-radius: 4px;
+  box-shadow: none;
+  //transition: 0.3s;
+  height: 36px;
+  font-size: 14px;
+  font-family: $font-SFUIText-Regular;
+  color: $text-color;
+  &:focus, &:active {
+    @include focus-active;
+    border: 1px solid $blue;
+  }
+  &[disabled]{
+    background: #ddd;
+    color: #999;
+    &:focus, &:active {
+      @include focus-active;
+      border: 1px solid transparent;
+    }
+  }
+}

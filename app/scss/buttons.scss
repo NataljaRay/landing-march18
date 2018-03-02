@@ -1,0 +1,99 @@
+.btn {
+  background: transparent;
+  font-family: $font-SFUIText-Semibold;
+  font-size: 13px;
+  font-weight: 600;
+  color: #8c959f;
+  height: 36px;
+  &:hover {
+    border-color: #4086f7;
+  }
+
+  //кнопка отмены
+  &.cancel{
+    border-color: transparent;
+    &:hover{
+      color: $blue;
+    }
+  }
+
+  //кнопка сохранить
+  &.save{
+    &:hover{
+      color: $blue;
+    }
+  }
+
+  // кнопка с иконкой
+  &-icon {
+    padding: 8px 16px 7px;
+    &:before {
+      content: '';
+      width: 19px;
+      height: 21px;
+      margin-right: 10px;
+      margin-top: -2px;
+      display: inline-block;
+      vertical-align: middle;
+      background: #ddd;
+    }
+
+    &.download:before {
+      background: url("../img/download.svg") no-repeat center center;
+    }
+    &.delete:before {
+      background: url("../img/delete.svg") no-repeat center center;
+    }
+  }
+
+}
+
+
+
+/// кнопки в тулбаре
+.square{
+  width: 36px;
+  &--row{
+    width: 26px;
+    height: 26px;
+    margin-left: 5.5px;
+    background-size: 70%!important;
+    //background-position: center center!important;
+  }
+}
+.btn{
+  &-col{
+    background: url('../../img/columns.svg') no-repeat center center #fff;
+    &:hover{
+      background: url('../../img/columns.svg') no-repeat center center $grey-true;
+    }
+  }
+  &-refresh{
+    background: url('../../img/refresh.svg') no-repeat center center #fff;
+    &:hover{
+      background: url('../../img/refresh.svg') no-repeat center center $grey-true;
+    }
+  }
+  &-delete{
+    background: url('../../img/delete.svg') no-repeat center center #fff;
+    &:hover{
+      background: url('../../img/delete.svg') no-repeat center center $grey-true;
+    }
+  }
+  &-edit{
+    background: url('../../img/edit.svg') no-repeat center center #fff;
+    &:hover{
+      background: url('../../img/edit.svg') no-repeat center center $grey-true;
+    }
+  }
+  &-add{
+    background: url('../../img/add.svg') no-repeat center center $green;
+    background-position: 8px 7px;
+    border-color: $green;
+    &:hover{
+      box-shadow: 0 7px 12px 0 #c1d3ae;
+    }
+  }
+}
+
+

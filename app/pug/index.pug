@@ -1,0 +1,29 @@
+extends layout/main-layout
+
+block body
+
+  block header
+    header.header
+      div.container
+        a.logo(href="/")
+          img(src="/img/logo.png")
+        nav.nav
+          a(href="#") О компании
+          a(href="#") Продукты
+          a(href="#") Партнерам
+          a(href="#") Контакты
+        div.search
+          img(src="/img/search.png")
+
+  block content
+    section
+      div section
+
+  block footer
+    footer.footer
+      div footer
+
+
+append scripts
+  //script(src = 'js/script.js')
+

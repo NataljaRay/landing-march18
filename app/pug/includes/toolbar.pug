@@ -1,0 +1,26 @@
+div.toolbar
+  div.line
+    h1.title Баланс характеристик
+  div.line
+    div.parameter.parameter--right
+      select.reg-operator
+        option Все отходы
+        option Все отходы 2
+    form.search
+      input(type="search" placeholder="Поиск" v-model="search")
+    //div.filter
+      button.filter__button(@click="find = !find") Фильтр
+
+    div.parameters
+      select.unit
+        option Ед. изм.
+        option Тонн
+      select.year
+        option(value='') Год
+        option 2017
+        option 2016
+        option 2015
+    div.actions-panel
+      button.actions-panel__button.btn-refresh(title="Актуализация таблицы")
+      //button.actions-panel__button.btn-delete(title="Удаление")
+      button.actions-panel__button.btn-add.green(title="Добавление")

@@ -1,0 +1,92 @@
+@import 'fonts';
+@import 'variables';
+
+@import "reset";
+@import "mixins";
+
+//@import 'base';
+//@import "buttons";
+//@import "checkboxes";
+
+html, body{
+  background: #f1f1f1;
+}
+
+body{
+  @include font($font-Lato-Regular, 24px, $text-color);
+  *:before,
+  *:after{
+    display: none;
+  }
+}
+.main-layout{
+  font-family: $font-Lato-Regular;
+
+
+  .container{
+    max-width: 1170px;
+    margin: auto;
+    @include flex(space-between);
+  }
+
+  @import "landing/header";
+
+
+  //min-width: 1280px;
+  //background: #f2f3f9;
+  //color: #373737;
+  //.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+  //  border-color: transparent!important;
+  //}
+  //.nav-tabs > li > a:hover{
+  //  border-color: transparent;
+  //}
+  //.flex{
+  //  display: flex;
+  //  justify-content: space-between;
+  //  &-1{
+  //    flex: 1
+  //  }
+  //  &-2{
+  //    flex: 2
+  //  }
+  //  &-3{
+  //    flex: 3
+  //  }
+  //  &-4{
+  //    flex: 4
+  //  }
+  //  &-5{
+  //    flex: 5
+  //  }
+  //}
+  //a{
+  //  text-decoration: none;
+  //  &:hover{
+  //    text-decoration: none;
+  //  }
+  //  &:focus{
+  //    text-decoration: none;
+  //    outline: none;
+  //  }
+  //}
+  //.block-2-of-7{
+  //  flex: 2
+  //}
+  //.block-5-of-7{
+  //  flex: 7
+  //}
+  //.blue{color: $blue}
+
+  //@import 'main/buttons';
+  //@import 'main/header';
+  //@import 'main/toolbar';
+  //@import 'main/footer';
+  //@import 'main/menu';
+  //@import 'main/section';
+  //@import 'main/mainpage';
+  //@import 'main/table';
+  //@import 'main/content';
+  //@import 'main/modal';
+
+}

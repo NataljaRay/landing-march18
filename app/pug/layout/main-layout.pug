@@ -1,0 +1,38 @@
+doctype html
+
+html(lang='ru', class = page)
+  head
+    meta(charset = 'utf-8')
+    meta(name="viewport" content="width=1280, initial-scale=1")
+    title Главная
+    block styles
+      //for scss
+      link(rel='stylesheet',href='/css/all.css')
+      //link(rel='stylesheet',href='/assets/bootstrap-3/css/bootstrap.css')
+      //link(rel='stylesheet',href='/assets/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.css')
+      //link(rel='stylesheet',href='/js/malihu-custom-scrollbar/jquery.mCustomScrollbar.css')
+      //script(src='/js/jquery-3.2.1.min.js')
+      //for less
+      //link(rel='stylesheet',href='css/style.css')
+
+  body.main-layout
+    block body
+      block header
+      block toolbar
+      block content
+      block footer
+      block modal
+
+
+    block scripts
+
+      //script(src='./../node_modules/jquery/dist/jquery.min.js')
+      script(src='/js/jquery-3.2.1.min.js')
+      //script(src='/assets/bootstrap-3/js/bootstrap.js')
+
+      //script(src='/js/malihu-custom-scrollbar/js/minified/jquery.mCustomScrollbar.min.js')
+      script(src = '/js/script.js')
+      //script(src='/lib/js/jquery-ui.min.js')
+      //script(src='/lib/js/datepicker-ru.js')
+      //script(src='/lib/js/jquery-multipicker.js')
+      //script(src='/js/page.js')

@@ -1,0 +1,114 @@
+html,body{
+  height: 100%;
+}
+body{
+  padding:0;
+  margin: 0;
+  //border: 5px solid #fff;
+  //box-sizing: border-box;
+  //display: flex;
+  //flex-direction: column;
+  ////background: #f1f1f1;
+  //background: #f7f8fa;
+  //font-family: $font-SFUIText-Regular;
+  //font-size: 14px;
+  //color: $text-color;
+  //min-width: 1024px;
+  //margin: auto;
+  //*{
+  //  transition: .3s;
+  //  &:hover{
+  //    transition: .3s;
+  //  }
+  //}
+
+}
+#app{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  //background: #f1f1f1;
+  font-family: $font-SFUIText-Regular;
+  font-size: 14px;
+  color: $text-color;
+  min-width: 1024px;
+  margin: auto;
+  height: 100%;
+  &.user-layout{
+    background: $grey-background;
+  }
+  &.card-layout{
+    background: $white;
+  }
+}
+.section{
+  flex: auto;
+  background: #f2f3f9;
+  overflow: auto;
+  //padding: 10px;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+.header, .navigation, .table-fix-header, .footer{
+  background: #f1f1f1;
+  height: 30px;
+  flex: none;
+  padding: 10px 40px;
+  box-sizing: border-box;
+}
+
+
+//////// default ///////
+input, button, select{
+  height: 36px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: none;
+  outline: none;
+  padding: 8px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-SFUIText-Regular;
+  font-size: 14px;
+  //transition: .3s;
+  //&:hover{
+  //  transition: .3s;
+  //}
+  &:focus, &:active{
+    outline: none;
+  }
+}
+
+button{
+  background: #fff;
+  padding: 8px 12px;
+  cursor: pointer;
+
+}
+
+label{
+  color: $grey-text-color;
+  font-family: $font-SFUIText-Semibold;
+  margin: 0 10px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.close{
+  display: inline-block;
+  //position: absolute;
+  //right: 23px;
+  //top: 16px;
+  width: 21px;
+  height: 21px;
+  background: red;
+  //background: url(/dist/./assets/close.svg?9055b0f…) no-repeat 50%;
+  background: url('../img/close.svg') no-repeat center center;
+  opacity: .8;
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}

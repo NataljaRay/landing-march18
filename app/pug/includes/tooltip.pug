@@ -1,0 +1,50 @@
+// tooltip--bottom - тублип снизу от объекта (стрелка сверху)
+// tooltip--top - тублип сверху от объекта (стрелка снизу)
+// tooltip--left - тублип слева от объекта (стрелка справа)
+// tooltip--right - тублип справа от объекта (стрелка слева)
+
+div.tooltip.tooltip--top
+  div.tooltip__head
+    p.title Объект обращения с отходами
+    span.close.close--small.close--tooltip
+  div.tooltip__body
+    div.tooltip__body-item
+      span.info.info--grey Имя:
+      span.info полигон утилизации твердых отходов полигон утилизации твердых отходов
+    div.tooltip__body-item
+      span.info.info--grey Местоположение:
+      span.info пгт. Андра
+    div.tooltip__body-item
+      span.info.info--grey Виды деятельности:
+      span.info Захоронение
+    div.tooltip__body-item
+      span.info.info--grey Мощность:
+      span.info 576 тонн/год
+    div.tooltip__body-item
+      span.info.info--grey Собственик:
+      span.info ООО Управление социальных объектов
+    div.tooltip__body-item
+      span.info.info--grey Виды деятельности:
+      span.info Захоронение
+    div.table
+      table
+        thead
+          th Технология
+          th Мощность
+          th Технология
+        tbody
+          tr
+            td Значение
+            td Значение
+            td Значение
+          tr
+            td Значение
+            td Значение
+            td Значение
+    div.tooltip__body-bar
+      div Загрузка объекта: 64%
+      div.progressbar
+        div.progressbar.progressbar--loaded(style="width: 64%;")
+
+  div.tooltip__foot
+    button Подробнее

@@ -1,0 +1,146 @@
+.main-header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  //background: grey;
+  z-index: 2;
+  //height: 40px;
+  padding-top: 38px;
+
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    //height: 100%;
+  }
+  &__logo{
+    margin-left: 54px;
+  }
+}
+
+////////////////////////////////////////////////////////
+
+.inner-header{
+  background: #ffffff;
+  //border-bottom: 1px solid #ddd;
+  height: 75px;
+  //line-height: 65px;
+  padding: 0 40px;
+  padding: 0 60px;
+  > *{
+    //height: 65px;
+  }
+  .header{
+    &-logo{
+      flex: 1;
+    }
+    &-wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      //height: 100%;
+    }
+    .block-1-of-5{
+      flex: 1
+
+    }
+    &-navigation{
+      //height: 65px;
+
+      flex: 2;
+      text-align: center;
+      .menu-tabs{
+        box-sizing: border-box;
+        &__tab{
+          position: relative;
+          color: #7d8097;
+          display: inline-block;
+          height: 75px;
+          line-height: 75px;
+          font-size: 14px;
+          font-family: $font-OpenSans-Semibold;
+          //margin-left: 10px;
+          margin: 0 40px;
+          &:first-child{
+            margin-left: 0;
+          }
+          &:last-child{
+            margin-right: 0;
+          }
+          &:hover{
+            color: #373737;
+          }
+
+          &.active{
+            color: #373737;
+            border-bottom: 3px solid #29176f;
+          }
+          .counter{
+            width: 28px;
+            height: 28px;
+            background: #1885fc;
+            color: #fff;
+            border-radius: 100%;
+            display: inline-block;
+            position: relative;
+            font-size: 14px;
+            vertical-align: middle;
+            line-height: 28px;
+            margin-left: 6px;
+            position: absolute;
+            top: 32%;
+            right: -36px;
+
+          }
+        }
+      }
+
+    }
+    &-profile{
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: flex-end;
+      font-family: $font-SFUIText-Semibold;
+      &__photo{
+        border-radius: 100px;
+        width: 20px;
+        height: 21px;
+        margin-right: 8px;
+        img{
+          width: 100%;
+          height: auto;
+        }
+        &--login{
+          width: 34px;
+          height: 34px;
+        }
+      }
+      &__name{
+        a{
+          color: #373737;
+          font-family: $font-OpenSans-Semibold;
+          font-size: 14px;
+        }
+        span{margin: 0 6px}
+        &--login{
+          &:after{
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            background: url('../../img/arrow-grey.svg') no-repeat center center;
+            padding: 8px;
+            width: 10px;
+            height: 5px;
+          }
+        }
+
+
+      }
+    }
+
+
+
+  }
+}

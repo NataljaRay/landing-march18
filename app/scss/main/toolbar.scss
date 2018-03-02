@@ -1,0 +1,122 @@
+.inner-toolbar{
+  background: #fff;
+  //height: 60px;
+  //border-bottom: 1px solid #ddd;
+  padding: 0px 60px;
+  margin-bottom: 30px;
+  &.marketer{
+    padding-top: 8px;
+  }
+  .green-button{
+    //min-width: 182px;
+    padding: 0 26px;
+    width: auto;
+  }
+  .title{
+    font-size: 28px;
+    font-size: $font-OpenSans-Regular;
+    margin: 0;
+    margin-top: 10px;
+  }
+  &__line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+
+  }
+  .form{
+  //  //background: #000;
+  //  max-width: 90%;
+    width: 100%;
+    margin: 15px 0 25px;
+    //background: red;
+    form{
+      display: flex;
+      justify-content: flex-start;
+
+      input{
+        width: 89%;
+        height: 50px;
+
+        //background: transparent;
+        padding: 8px;
+        border: 1px solid #7d7d7d;
+        border-radius: 2px;
+        color: $white;
+      }
+      .grey-button{
+        border: 1px solid #7d7d7d;
+        background: #fff;
+        color: #7d7d7d;
+        display: inline-block;
+        padding: 0 30px;
+        //text-transform: uppercase;
+        font-size: 14px;
+        font-family: $font-OpenSans-Semibold;
+        height: 50px;
+        line-height: 50px;
+        //margin-left: -5px;
+        padding: 0 44px;
+        border-radius: 4px;
+        margin-left: -4px;
+        position: relative;
+        .filter{
+          content: '';
+          width: 20px;
+          height: 10px;
+          display: inline-block;
+          background: url('/img/filter.png') no-repeat center center;
+          margin-left: 25px;
+          //padding-top: 10px;
+          //position: absolute;
+          //right: 10px;
+          //top: 20px;
+          //margin-right: 20px;
+        }
+      }
+
+
+    }
+
+  }
+
+  .actions-panel{
+    &__button{
+      margin-left: 23px;
+      height: 50px;
+      //display: inline-block;
+      //width: 182px;
+      padding: 0 26px;
+      width: auto;
+
+    }
+  }
+
+  &.grey{
+    background: #f2f3f9;
+  }
+  .to-back{
+    &:before{
+      content: '< ';
+    }
+  }
+}
+
+
+.breadcrumps > a{
+  color: #1885fc;
+  font-family: $font-OpenSans-Regular;
+  font-size: 11px;
+  &:after{
+    content: ' > ';
+    margin: 0 4px;
+  }
+  &:last-child:after{
+    content: ''
+  }
+}
+
+.big-padding{
+  padding-top: 15px;
+}

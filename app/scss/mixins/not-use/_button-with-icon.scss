@@ -1,0 +1,14 @@
+@mixin button-with-icon{
+  padding: 8px 16px 7px 10px;
+  &:before {
+    @include before-after;
+    width: 19px;
+    height: 21px;
+    margin-right: 10px;
+    margin-top: -2px;
+    vertical-align: middle;
+  }
+  &:hover {
+    color: $grey-text-color;
+  }
+}

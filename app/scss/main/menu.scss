@@ -1,0 +1,109 @@
+.nav > li > a:hover, .nav > li > a:focus{
+  background: transparent;
+}
+.menu{
+  background: $white;
+  //border-right: 1px solid red;
+  height: 100vh;
+  padding-top: 80px;
+  padding-left: 40px;
+  z-index: 1;
+  box-sizing: border-box;
+  &-icon{
+    background: url('/img/menu.png') no-repeat center center;
+    display: inline-block;
+    width: 23px;
+    height: 18px;
+    margin-left: 60px;
+  }
+
+  .nav{
+    margin-bottom: 24px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &--standart{
+      li{
+        a{
+          color: #29176f;
+          font-family: $font-OpenSans-Semibold;
+          font-size: 16px;
+          line-height: normal;
+          text-decoration: underline;
+          padding: 0 20px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+    &--big{
+      margin-bottom: 130px;
+      @media screen and (max-width: 1366px) and (max-height: 768px){
+        margin-bottom: 16px
+      }
+      @media screen and (min-width: 1367px){
+        margin-bottom: 165px;
+      }
+      li{
+        a{
+          color: #373737;
+          font-family: $font-OpenSans-Regular;
+          font-size: 28px;
+          line-height: normal;
+          text-decoration: underline;
+          padding: 0 20px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+    &--small{
+      &__title{
+        color: #3c3c3c;
+        font-family: $font-OpenSans-Semibold;
+        font-size: 16px;
+        line-height: normal;
+        //text-decoration: underline;
+        padding: 0 20px;
+        margin-bottom: 8px;
+      }
+      li{
+        a{
+          color: #3c3c3c;
+          font-family: $font-OpenSans-Semibold;
+          font-size: 16px;
+          line-height: normal;
+          text-decoration: underline;
+          padding: 0 20px;
+          margin-bottom: 8px;
+          &:before{
+            content: '';
+            display: inline-block;
+            height: 22px;
+            width: 20px;
+            background: #ddd;
+            margin-right: 10px;
+            vertical-align: bottom;
+          }
+
+          &.log-in:before{
+            background: url("/img/enter-icon.png") no-repeat center center;
+          }
+          &.registration:before{
+            background: url("/img/log-in.png") no-repeat center center;
+          }
+          &.market:before{
+            background: url("/img/market.png") no-repeat center center;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+}

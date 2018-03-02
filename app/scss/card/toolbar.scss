@@ -1,0 +1,199 @@
+.nav{
+  padding: 0;
+  //padding-top: 19px;
+  min-height: 40px;
+  height: auto;
+  background: $white;
+
+
+  .toolbar-navigation {
+    //display: flex;
+    //justify-content: space-between;
+    //align-items: center;
+    height: 100%;
+    padding: 0 40px;
+    border-bottom: 1px solid $grey-true;
+    position: relative;
+    &--in-card{
+      padding: 10px 40px;
+      border-bottom: none;
+    }
+    &__line{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .title{
+      font-size: 22px;
+      font-family: $font-SFUIText-Regular;
+      font-weight: normal;
+      margin: 0;
+      margin-top: 6px;
+    }
+
+    .tabs{
+      padding-top: 12px;
+      span{
+        //height: 40px;
+        //line-height: 40px;
+        display: inline-block;
+        margin: 0 14px;
+        padding-bottom: 13px;
+        font-size: 14px;
+        font-family: $font-SFUIText-Semibold;
+        color: $grey-text-color;
+        border-bottom: 2px solid transparent;
+        //max-width: 69px;
+        text-align: center;
+        vertical-align: middle;
+        //@media screen and (max-width: 1023px){
+        //  max-width: 70px;
+        //  font-size: 14px;
+        //  margin: 0 10px;
+        //
+        //}
+        &:last-child{
+          margin-right: 0;
+        }
+        &:hover{
+          color: $blue;
+          cursor: pointer;
+        }
+
+        &:first-child{
+          margin-left: 0;
+        }
+        &.active{
+          color: $blue;
+          border-bottom: 2px solid $blue;
+        }
+      }
+    }
+
+    .toolbar-title{
+      font-size: 14px;
+      font-family: $font-SFUIText-Semibold;
+      &:after{
+        content: '';
+        display: inline-block;
+        width: 14px;
+        height: 10px;
+        margin-left: 9px;
+        vertical-align: middle;
+        background: url('../../img/arrow-blue-select.svg') no-repeat center center;
+      }
+    }
+    .toolbar-settings{
+      display: flex;
+      align-items: center;
+      > *{
+        margin-left: 8px;
+        font-size: 13px;
+        text-align: right;
+      }
+      button:hover{
+        //background: $grey-true;
+      }
+      .search{
+        width: 260px;
+        background: url('../../img/search.svg') no-repeat left center #fff;
+        background-position-x: 8px;
+        padding-left: 34px;
+        @media screen and (max-width: 992px){
+          width: 200px;
+        }
+      }
+      .filter-open{
+        margin-left: -8px;
+        font-family: $font-SFUIText-Semibold;
+        font-size: 13px;
+        padding: 10px 12px;
+        &:hover {
+          background: $grey-true;
+        }
+      }
+      .toolbar-panel{
+        button{
+          margin: 0;
+          margin-left: 6px;
+        }
+        //.square{
+        //  width: 36px;
+        //}
+        //.btn{
+        //
+        //  &-col{
+        //    background: url('../../img/columns.svg') no-repeat center center #fff;
+        //    &:hover{
+        //      background: url('../../img/columns.svg') no-repeat center center $grey-true;
+        //    }
+        //  }
+        //  &-refresh{
+        //    background: url('../../img/refresh.svg') no-repeat center center #fff;
+        //    &:hover{
+        //      background: url('../../img/refresh.svg') no-repeat center center $grey-true;
+        //    }
+        //  }
+        //  &-delete{
+        //    background: url('../../img/delete.svg') no-repeat center center #fff;
+        //    &:hover{
+        //      background: url('../../img/delete.svg') no-repeat center center $grey-true;
+        //    }
+        //  }
+        //  &-edit{
+        //    background: url('../../img/edit.svg') no-repeat center center #fff;
+        //    &:hover{
+        //      background: url('../../img/edit.svg') no-repeat center center $grey-true;
+        //    }
+        //  }
+        //  &-add{
+        //    background: url('../../img/add.svg') no-repeat center center $green;
+        //    background-position: 8px 7px;
+        //    border-color: $green;
+        //    &:hover{
+        //      box-shadow: 0 7px 12px 0 #c1d3ae;
+        //    }
+        //  }
+        //}
+      }
+    }
+
+
+    //&__filter {
+    //  background: $white;
+    //  min-height: 25px;
+    //  display: flex;
+    //  justify-content: flex-end;
+    //  align-items: center;
+    //  height: 100%;
+    //  padding: 15px 40px;
+    //  box-sizing: border-box;
+    //  > *{
+    //    margin-left: 10px;
+    //
+    //  }
+    //  //label{
+    //  //  color: $grey-text-color;
+    //  //  font-family: $font-SFUIText-Semibold;
+    //  //  margin: 0 10px;
+    //  //  &:last-child{
+    //  //    margin-right: 0;
+    //  //  }
+    //  //}
+    //  .date{
+    //    background: url('../../img/calendar.svg') no-repeat right center #fff;
+    //    background-position-x: 92%;
+    //    max-width: 102px;
+    //  }
+    //  .set-filter{
+    //    display: flex;
+    //    margin-left: 20px;
+    //  }
+    //
+    //
+    //
+    //
+    //}
+  }
+
+}

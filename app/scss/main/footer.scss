@@ -1,0 +1,212 @@
+.main-footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  //background: grey;
+  &--shema {
+    filter: brightness(0) invert(0);
+    opacity: 0.6;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //height: 100%;
+  }
+  //.menu{
+  //  padding: 0;
+  //  background: transparent;
+  //}
+  .footer-nav{
+    margin-top: -28px;
+    padding-left: 40px;
+  }
+  .nav{
+    &--small{
+      &__title{
+        color: #3c3c3c;
+        font-family: $font-OpenSans-Semibold;
+        font-size: 16px;
+        line-height: normal;
+        //text-decoration: underline;
+        padding: 0 20px;
+        margin-bottom: 8px;
+      }
+      li{
+        a{
+          color: #3c3c3c;
+          font-family: $font-OpenSans-Semibold;
+          font-size: 16px;
+          line-height: normal;
+          text-decoration: underline;
+          padding: 0 20px;
+          margin-bottom: 8px;
+          &:before{
+            content: '';
+            display: inline-block;
+            height: 22px;
+            width: 20px;
+            background: #ddd;
+            margin-right: 10px;
+            vertical-align: bottom;
+          }
+
+
+          &.sampler:before{
+            background: url("/img/sampler.png") no-repeat center center;
+          }
+          &.market:before{
+            background: url("/img/market.png") no-repeat center center;
+          }
+        }
+      }
+    }
+  }
+  .main-page{
+    &__footer{
+      a{
+        text-decoration: none;
+      }
+      &-block{
+        display: inline-block;
+        margin-bottom: 16px;
+        padding: 0;
+        .bold{
+          font-family: $font-SFUIDisplay-Semibold;
+          color: $white;
+          border-bottom: 1px solid rgba(255,255,255,0.5);
+          font-size: 16px;
+          line-height: 24px;
+          &--no-border{
+            border-bottom-color: transparent;
+          }
+        }
+        .grey{
+          color: rgba(255,255,255,0.5);
+          //color: #8d8d8d;
+          font-family: $font-OpenSans-Regular;
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+    }
+
+  }
+  .questions{
+    font-size: 13px;
+    font-family: $font-OpenSans-Semibold;
+    color: $white;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+  }
+
+}
+.social{
+
+  //display: flex;
+  //justify-content: space-between;
+  margin-bottom: 10px;
+  //margin-top: 40px;
+  text-align: right;
+
+  & + div{
+    text-align: right;
+
+  }
+  &__button{
+    background: transparent;
+    //border: 2px solid $white;
+    display: inline-block;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    color: $white;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 25px;
+    background: url('/img/socials.png') no-repeat;
+
+    &.vk{
+      background-position: 0 0;
+    }
+    &.telegram{
+      background-position: -40px 0;
+    }
+    &.phone{
+      background-position: -80px 0;
+    }
+
+
+  }
+
+
+}
+
+
+///////////////////////////
+
+.inner-footer{
+  background: #f2f3f9;
+  padding: 25px 54px 40px;
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //height: 100%;
+  }
+  &__left{
+    flex: 5;
+    display: flex;
+
+  }
+  &__right{
+    flex: 1;
+  }
+
+  .main-page{
+    &__footer{
+      a{
+        text-decoration: none;
+      }
+      &-block{
+        display: inline-block;
+        margin-bottom: 16px;
+        padding: 0;
+        margin-right: 5%;
+        .bold{
+          font-family: $font-SFUIDisplay-Semibold;
+          color: #8d8d8d;
+          border-bottom: 1px solid #8d8d8d;
+          font-size: 16px;
+          line-height: 24px;
+          &--no-border{
+            border-bottom-color: transparent;
+          }
+        }
+        .grey{
+          color: #8d8d8d;
+          //color: #8d8d8d;
+          font-family: $font-OpenSans-Regular;
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+    }
+
+  }
+
+  .social{
+    max-width: 216px;
+  }
+  .social__button{
+    filter: brightness(0) invert(0);
+    opacity: 0.4;
+  }
+  .questions{
+    display: inline-block;
+    font-size: 13px;
+    font-family: $font-OpenSans-Semibold;
+    color: #8d8d8d;
+    border-bottom: 1px solid #8d8d8d;
+  }
+}
