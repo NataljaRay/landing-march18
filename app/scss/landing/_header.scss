@@ -1,0 +1,34 @@
+.header{
+  background-color: $black;
+  @include font($font-Lato-Light, 16px, $white);
+  height: 50px;
+  box-sizing: border-box;
+  padding: 11px 0;
+
+
+  .logo{
+    display: flex;
+    flex: 1
+  }
+
+  .nav{
+    @include flex(space-around);
+    flex: 4;
+    a{
+      display: flex;
+      @include font($font-Lato-Light, 16px, $white);
+      text-decoration: none;
+      align-items: center;
+      &:hover{
+        color: $grey;
+      }
+    }
+
+  }
+  .search{
+    @include flex(flex-end);
+    flex: 1;
+    align-items: center;
+  }
+
+}
