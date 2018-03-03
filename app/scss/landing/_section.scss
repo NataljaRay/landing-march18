@@ -1,23 +1,158 @@
 .section{
-  height: 100vh;
+  background: $white;
+  padding-top: 50px;
+  //height: 100vh;
   box-sizing: border-box;
   position: relative;
+
+  .bold{
+    font-family: $font-Lato-Regular;
+    margin-left: 14px;
+  }
+  .title{
+    padding-bottom: 40px;
+    //padding: 40px 0;
+    //box-sizing: border-box;
+
+  }
+  .text{
+    text-align: left;
+    p{
+      //@include font($font-Lato-Regular, 24px, $text-color);
+
+    }
+  }
 }
 
 .screen{
+  %img{
+    width: 100%;
+    height: auto;
+  }
   &-1{
-    background: url("/img/screen-1.jpg") center center no-repeat;
+    height: 100vh;
+    background: url('/img/screen-1.jpg') center center no-repeat;
     background-size: cover;
     color: $white;
-    padding-top: 50px;
+    //padding-top: 50px;
     @include font($font-Lato-Light, 16px, $white);
 
     .logo{
       margin-top: 130px;
       margin-bottom: 120px;
+      height: auto;
+      @media screen and (max-width: 1400px){
+        margin: 6% auto 4%;
+      }
     }
     .title{
       font-size: 100px;
+      //font-size: 7em;
+    }
+  }
+
+  &-2{
+    height: auto;
+    .title{
+      @include font($font-Lato-Light, 50px, $text-color);
+      //@extend %title;
+      .bold{
+        font-family: $font-Lato-Regular;
+        margin-left: 14px;
+      }
+    }
+
+    .map{
+      max-width: 1300px;
+      padding-bottom: 50px;
+
+      img{
+        margin-right: -132px;
+        @extend %img;
+      }
+    }
+
+    .text{
+      padding: 0 105px;
+      padding-bottom: 180px;
+    }
+  }
+
+  &-3{
+    height: auto;
+    margin-bottom: -20px;
+    .title{
+      @include font($font-Lato-Light, 50px, $text-color);
+    }
+    .development{
+      @include flex(space-between);
+      > div{
+        flex: 1
+      }
+    }
+    .bold{
+      margin-top: 38px;
+      margin-left: 0;
+    }
+
+    .list{
+      padding-left: 20px;
+      li{
+        padding-left: 20px;
+      }
+    }
+    .pic{
+      max-width: 652px;
+      height: 455px;
+      margin-top: -80px;
+      img{
+        margin-right: -125px;
+        @extend %img;
+      }
+    }
+  }
+
+  &-4 {
+    background: url('/img/screen-4.jpg') center center no-repeat;
+    background-size: cover;
+    color: $white;
+
+    .title{
+      @include font($font-Lato-Light, 50px, $white);
+      margin-top: 50px;
+    }
+    .features{
+      padding: 110px 105px 200px;
+
+      @include flex(space-around);
+      img{
+        width: 143px;
+        height: auto;
+      }
+    }
+    .contact{
+      position: relative;
+      bottom: 0;
+      text-align: center;
+      width: 100%;
+      padding-bottom: 120px;
+      a{
+        position: relative;
+        left: 0
+      }
+    }
+  }
+
+  &-5{
+    .title{
+      @include font($font-Lato-Light, 50px, $text-color);
+      margin-top: 50px;
+    }
+    .development{
+      @include flex(space-between);
+      > div{
+        flex: 1
+      }
     }
   }
 }

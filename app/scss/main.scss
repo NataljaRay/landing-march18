@@ -13,18 +13,16 @@ html, body{
 }
 
 body{
-  @include font($font-Lato-Regular, 24px, $text-color);
+  @include font($font-Lato-Light, 24px, $text-color);
   *:before,
   *:after{
     display: none;
   }
 }
 .main-layout{
-  font-family: $font-Lato-Regular;
-
-
   .container{
     max-width: 1170px;
+    padding: 0 15px;
     margin: auto;
     text-align: center;
     &--flex{
