@@ -26,10 +26,15 @@ body{
   .container{
     max-width: 1170px;
     margin: auto;
-    @include flex(space-between);
+    text-align: center;
+    &--flex{
+      @include flex(space-between);
+    }
   }
 
   @import "landing/header";
+  @import "landing/section";
+  @import "landing/components/contact-us";
 
 
   //min-width: 1280px;

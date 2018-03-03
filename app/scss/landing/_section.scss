@@ -1,0 +1,27 @@
+.section{
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.screen{
+  &-1{
+    background: url("/img/screen-1.jpg") center center no-repeat;
+    background-size: cover;
+    color: $white;
+    padding-top: 50px;
+    @include font($font-Lato-Light, 16px, $white);
+
+    .logo{
+      margin-top: 130px;
+      margin-bottom: 120px;
+    }
+    .title{
+      font-size: 100px;
+    }
+  }
+}
+
+
+
+

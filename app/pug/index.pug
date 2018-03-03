@@ -4,7 +4,7 @@ block body
 
   block header
     header.header
-      div.container
+      div.container.container--flex
         a.logo(href="/")
           img(src="/img/logo.png")
         nav.nav
@@ -16,11 +16,15 @@ block body
           img(src="/img/search.png")
 
   block content
-    section
-      div section
+    section.section.screen-1
+      div.container
+        div.logo
+          img(src="/img/logo-big.png")
+        div.title Очевидный результат!
+        a.contact-us(href='#') Связаться с нами
 
   block footer
-    footer.footer
+    //footer.footer
       div footer
 
 

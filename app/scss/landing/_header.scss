@@ -1,9 +1,13 @@
 .header{
-  background-color: $black;
+  background-color: rgba(0,0,0, .85);
   @include font($font-Lato-Light, 16px, $white);
   height: 50px;
   box-sizing: border-box;
   padding: 11px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 0;
 
 
   .logo{

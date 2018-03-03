@@ -1,0 +1,21 @@
+.contact-us{
+  text-decoration: none;
+  color: $white;
+  font-size: 34px;
+  bottom: 87px;
+  position: absolute;
+  left: calc((100% - 303px)/2);
+  &:after{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background: url("/img/contact-icon.png") center center no-repeat;
+    width: 27px;
+    height: 27px;
+    margin-left: 12px;
+  }
+  &:hover{
+    color: $grey;
+    cursor: pointer;
+  }
+}
